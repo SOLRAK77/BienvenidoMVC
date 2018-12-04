@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Datos del estudiante:</h2>
+
+<div class="container">
+    <div class="row">
+        <div class="col-3 offset-3">
+            Nombre:
+        </div>
+        <div class="col-3">
+            @ViewBag.NOMBRE @ViewBag.AP_PATER @ViewBag.AP_MATER
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3 offset-3">
+            Email:
+        </div>
+        <div class="col-3">
+            @ViewBag.CORREO
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3 offset-3">
+            telefono:
+        </div>
+        <div class="col-3">
+            @ViewBag.TELEFONO
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3 offset-3">
+            Fecha Nacimiento:
+        </div>
+        <div class="col-3">
+            @ViewBag.FECHA_NAC
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,45 @@
+﻿@*USO DE LA PROPIEDAD MODEL!*@
+@model BienvenidoMVC.Controllers.clsEstudiante
+
+@{
+    ViewBag.Title = "MVC: Paso de datos [Model]";
+}
+
+<h2>Paso de datos [Model]</h2>
+
+<div class="container">
+    <div class="row">
+        <div class="col-3 offset-3">
+            Nombre:
+        </div>
+        <div class="col-3">
+            @Model.Nombre @Model.Ap_Paterno @Model.Ap_Materno
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3 offset-3">
+            Email:
+        </div>
+        <div class="col-3">
+            @Model.Correo
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3 offset-3">
+            telefono:
+        </div>
+        <div class="col-3">
+            @Model.Telefono
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3 offset-3">
+            Fecha Nacimiento:
+        </div>
+        <div class="col-3">
+            @Model.Fecha_Nac.ToString("dd-MM-yyyy");
+        </div>
+    </div>
+</div>
+
+
